@@ -10,7 +10,7 @@
 
         <link rel="stylesheet" href="dist/reset.css">
 		<link rel="stylesheet" href="dist/reveal.css">
-		<link rel="stylesheet" href="dist/theme/black.css" id="theme">
+		<link rel="stylesheet" href="dist/theme/league.css" id="theme">
 
 
         <link rel="stylesheet" href="css/custom.css">
@@ -79,7 +79,7 @@
                             <div class='col'>
                                 <p>
                                 En vektor har tre komponenter som skalerer tre enhetsvektorer
-                                $\vec{r} = x \color{red}{\mathbf{i}} + y \color{green}{\mathbf{j}} + z \color{blue}{\mathbf{k}}$
+                                $\vec{r} = x \color{red}{\mathbf{i}} + y \color{green}{\mathbf{j}} + z \color{aqua}{\mathbf{k}}$
                                 </p>
                             </div>
                         </div>
@@ -92,11 +92,11 @@
                         <div class='container' style='zoom:0.8'>
                             <div class='col'>
                         <p>En posisjonsvektor starter <br>alltid i origo<br>
-                           <center>$\vec{r} = x \red{\mathbf{i}} + y \green{\mathbf{j}} + z \blue{\mathbf{k}}$</center></p>
+                           <center>$\vec{r} = x \red{\mathbf{i}} + y \green{\mathbf{j}} + z \aqua{\mathbf{k}}$</center></p>
                         </div>
                         <div class='col'>
                         <p>En vanlig vektor er en <br>funksjon av posisjon<br>
-                           <center>$\vec{u}(x,y,z) = u_x \red{\mathbf{i}} + u_y \green{\mathbf{j}} + u_z \blue{\mathbf{k}}$</center></p>
+                           <center>$\vec{u}(x,y,z) = u_x \red{\mathbf{i}} + u_y \green{\mathbf{j}} + u_z \aqua{\mathbf{k}}$</center></p>
                         </div>
                         </div>
                         <iframe scrolling="no" title="positionvector" data-src="https://www.geogebra.org/material/iframe/id/adu4kzkk/width/500/height/400/border/888888/sfsb/true/smb/false/stb/false/stbh/false/ai/false/asb/false/sri/true/rc/true/ld/false/sdz/true/ctl/false" width="500px" height="400px" style="border:0px;"> </iframe>
@@ -215,12 +215,12 @@
                     <h4>Vektor algebra er komponentvis</h4>
                     $
                     \begin{align*}
-                    \begin{pmatrix}{\red{u_x} \\ \green{u_y} \\ \blue{u_z}}\end{pmatrix} + \begin{pmatrix}{\red{v_x} \\ \green{v_y} \\ \blue{v_z}}\end{pmatrix} &= \begin{pmatrix}\red{u_x + v_x} \\ \green{u_y + v_y} \\ \blue{u_z + v_z} \end{pmatrix} \\
+                    \begin{pmatrix}{\red{u_x} \\ \green{u_y} \\ \aqua{u_z}}\end{pmatrix} + \begin{pmatrix}{\red{v_x} \\ \green{v_y} \\ \aqua{v_z}}\end{pmatrix} &= \begin{pmatrix}\red{u_x + v_x} \\ \green{u_y + v_y} \\ \aqua{u_z + v_z} \end{pmatrix} \\
                     \end{align*}
                     $
                     $
                     \begin{align*}
-                    \begin{pmatrix}{\red{u_x} \\ \green{u_y} \\ \blue{u_z}}\end{pmatrix} - \begin{pmatrix}{\red{v_x} \\ \green{v_y} \\ \blue{v_z}}\end{pmatrix} &= \begin{pmatrix}\red{u_x - v_x} \\ \green{u_y - v_y} \\ \blue{u_z - v_z} \end{pmatrix} \\
+                    \begin{pmatrix}{\red{u_x} \\ \green{u_y} \\ \aqua{u_z}}\end{pmatrix} - \begin{pmatrix}{\red{v_x} \\ \green{v_y} \\ \aqua{v_z}}\end{pmatrix} &= \begin{pmatrix}\red{u_x - v_x} \\ \green{u_y - v_y} \\ \aqua{u_z - v_z} \end{pmatrix} \\
                     \end{align*}
                     $
                     <!--table-- style='zoom: 1;'>
@@ -265,8 +265,8 @@
                     <p>En vektor skaleres komponentvis</p>
                     $
                     \begin{align*}
-                    \alpha \vec{u} &= \alpha(u_x \red{\mathbf{i}} + u_y \green{\mathbf{j}} +u_z \blue{\mathbf{k}}) \\
-                                   &= (\alpha u_x \red{\mathbf{i}} + \alpha u_y \green{\mathbf{j}} + \alpha u_z \blue{\mathbf{k}})
+                    \alpha \vec{u} &= \alpha(u_x \red{\mathbf{i}} + u_y \green{\mathbf{j}} +u_z \aqua{\mathbf{k}}) \\
+                                   &= (\alpha u_x \red{\mathbf{i}} + \alpha u_y \green{\mathbf{j}} + \alpha u_z \aqua{\mathbf{k}})
                     \end{align*}
                     $
                     <p>På matriseform</p>
@@ -281,7 +281,7 @@
                     <h3>Fart og hastighet</h3>
                     <div class='container'>
                         <div class='col'>
-                            <p>Fart er en skalar lik lengden av hastighetsvektoren</p>
+                            <p>Fart er en <u>skalar</u> lik lengden av hastighetsvektoren</p>
                             <p>Fart = $|\vec{u}|$</p>
                         </div>
                         <div class='col'>
@@ -299,21 +299,21 @@
                     $
                     \begin{align*}
                     \vec{u} \cdot \vec{v} &= u_x v_x + u_y v_y + u_z v_z \\
-                    \begin{pmatrix}{\red{u_x} \\ \green{u_y} \\ \blue{u_z}}\end{pmatrix} \cdot \begin{pmatrix}{\red{v_x} \\ \green{v_y} \\ \blue{v_z}}\end{pmatrix} &= \red{u_x v_x} + \green{u_y v_y} + \blue{u_z v_z}  \\
+                    \begin{pmatrix}{\red{u_x} \\ \green{u_y} \\ \aqua{u_z}}\end{pmatrix} \cdot \begin{pmatrix}{\red{v_x} \\ \green{v_y} \\ \aqua{v_z}}\end{pmatrix} &= \red{u_x v_x} + \green{u_y v_y} + \aqua{u_z v_z}  \\
                     \end{align*}
                     $
                 </section>
                 <section>
                     <h3>Rigorøst skalarprodukt</h3>
-                    $\vec{u} \cdot \vec{v} = (\red{u_x \mathbf{i}} + \green{u_y \mathbf{j}} +\blue{u_z \mathbf{k}}) \cdot (\red{v_x \mathbf{i}} + \green{v_y \mathbf{j}} +\blue{v_z \mathbf{k}})$<br>
+                    $\vec{u} \cdot \vec{v} = (\red{u_x \mathbf{i}} + \green{u_y \mathbf{j}} +\aqua{u_z \mathbf{k}}) \cdot (\red{v_x \mathbf{i}} + \green{v_y \mathbf{j}} +\aqua{v_z \mathbf{k}})$<br>
                     <div class='fragment'>
                     $
                     \require{cancel}
                     \begin{split}
-                      &= \red{u_x v_x \mathbf{i} \cdot \mathbf{i}} + \red{u_x} \green{v_y} \cancel{\red{\mathbf{i}} \cdot \green{\mathbf{j}}} + \red{u_x} \blue{v_z} \cancel{\red{\mathbf{i}} \cdot \blue{\mathbf{k}}} \\
-                       &+ \green{u_y} \red{v_x} \cancel{\green{\mathbf{j}} \cdot \red{\mathbf{i}}} + \green{u_y v_y \mathbf{j} \cdot \mathbf{j}} + \green{u_y} \blue{v_z} \cancel{\green{\mathbf{j}} \cdot \blue{\mathbf{k}}} \\
-                       &+ \blue{u_z} \red{v_x} \cancel{\blue{\mathbf{k}} \cdot \red{\mathbf{i}}} + \blue{u_z} \green{v_y} \cancel{\blue{\mathbf{k}} \cdot \green{\mathbf{j}}} + \blue{u_z v_z \mathbf{k} \cdot \mathbf{k}} \\
-                       &= \red{u_x v_x} + \green{u_y v_y} + \blue{u_z v_z}
+                      &= \red{u_x v_x \mathbf{i} \cdot \mathbf{i}} + \red{u_x} \green{v_y} \cancel{\red{\mathbf{i}} \cdot \green{\mathbf{j}}} + \red{u_x} \aqua{v_z} \cancel{\red{\mathbf{i}} \cdot \aqua{\mathbf{k}}} \\
+                       &+ \green{u_y} \red{v_x} \cancel{\green{\mathbf{j}} \cdot \red{\mathbf{i}}} + \green{u_y v_y \mathbf{j} \cdot \mathbf{j}} + \green{u_y} \aqua{v_z} \cancel{\green{\mathbf{j}} \cdot \aqua{\mathbf{k}}} \\
+                       &+ \aqua{u_z} \red{v_x} \cancel{\aqua{\mathbf{k}} \cdot \red{\mathbf{i}}} + \aqua{u_z} \green{v_y} \cancel{\aqua{\mathbf{k}} \cdot \green{\mathbf{j}}} + \aqua{u_z v_z \mathbf{k} \cdot \mathbf{k}} \\
+                       &= \red{u_x v_x} + \green{u_y v_y} + \aqua{u_z v_z}
                     \end{split}
                     $
                     </div>
@@ -383,12 +383,12 @@
                             Høyrehåndsregel
                             $
                     \begin{align*}
-                    \red{\mathbf{i}} \times \green{\mathbf{j}} &= \blue{\mathbf{k}}\\
-                    \blue{\mathbf{k}} \times \red{\mathbf{i}} &= \green{\mathbf{j}}\\
-                    \green{\mathbf{j}} \times \blue{\mathbf{k}} &= \red{\mathbf{i}} \\
+                    \red{\mathbf{i}} \times \green{\mathbf{j}} &= \aqua{\mathbf{k}}\\
+                    \aqua{\mathbf{k}} \times \red{\mathbf{i}} &= \green{\mathbf{j}}\\
+                    \green{\mathbf{j}} \times \aqua{\mathbf{k}} &= \red{\mathbf{i}} \\
                     \red{{\mathbf{i}}} \times \red{\mathbf{i}} &= 0 \\
                     \green{{\mathbf{j}}} \times \green{\mathbf{j}} &= 0 \\
-                    \blue{{\mathbf{k}}} \times \blue{\mathbf{k}} &= 0
+                    \aqua{{\mathbf{k}}} \times \aqua{\mathbf{k}} &= 0
                     \end{align*}
                         $
                         </div>
@@ -399,16 +399,16 @@
                     <h3>Utledning av kryss-produkt</h3>
                     <p>
                     $
-                    \vec{u} \times \vec{v} = (\red{u_x \mathbf{i}} + \green{u_y \mathbf{j}} +\blue{u_z \mathbf{k}}) \times (\red{v_x \mathbf{i}} + \green{v_y \mathbf{j}} +\blue{v_z \mathbf{k}})
+                    \vec{u} \times \vec{v} = (\red{u_x \mathbf{i}} + \green{u_y \mathbf{j}} +\aqua{u_z \mathbf{k}}) \times (\red{v_x \mathbf{i}} + \green{v_y \mathbf{j}} +\aqua{v_z \mathbf{k}})
                     $
                     </p>
                     <div class='fragment' data-fragment-index='1'>
                     $
                     \require{cancel}
                     \begin{split}
-                      &= \red{u_x v_x \cancel{\mathbf{i} \times \mathbf{i}}} + \red{u_x} \green{v_y} {\red{\mathbf{i}} \times \green{\mathbf{j}}} + \red{u_x} \blue{v_z} \red{\mathbf{i}} \times \blue{\mathbf{k}} \\
-                       &+ \green{u_y} \red{v_x} \green{\mathbf{j}} \times \red{\mathbf{i}} + \green{u_y v_y \cancel{\mathbf{j} \times \mathbf{j}}} + \green{u_y} \blue{v_z} \green{\mathbf{j}} \times \blue{\mathbf{k}} \\
-                       &+ \blue{u_z} \red{v_x} \blue{\mathbf{k}} \times \red{\mathbf{i}} + \blue{u_z} \green{v_y} \blue{\mathbf{k}} \times \green{\mathbf{j}} + \blue{u_z v_z \cancel{\mathbf{k} \times \mathbf{k}}} \\
+                      &= \red{u_x v_x \cancel{\mathbf{i} \times \mathbf{i}}} + \red{u_x} \green{v_y} {\red{\mathbf{i}} \times \green{\mathbf{j}}} + \red{u_x} \aqua{v_z} \red{\mathbf{i}} \times \aqua{\mathbf{k}} \\
+                       &+ \green{u_y} \red{v_x} \green{\mathbf{j}} \times \red{\mathbf{i}} + \green{u_y v_y \cancel{\mathbf{j} \times \mathbf{j}}} + \green{u_y} \aqua{v_z} \green{\mathbf{j}} \times \aqua{\mathbf{k}} \\
+                       &+ \aqua{u_z} \red{v_x} \aqua{\mathbf{k}} \times \red{\mathbf{i}} + \aqua{u_z} \green{v_y} \aqua{\mathbf{k}} \times \green{\mathbf{j}} + \aqua{u_z v_z \cancel{\mathbf{k} \times \mathbf{k}}} \\
 
                     \end{split}
                     $
@@ -423,22 +423,22 @@
                     $
                     \require{cancel}
                     \begin{split}
-                      &= \red{u_x v_x \cancel{\mathbf{i} \times \mathbf{i}}} + \red{u_x} \green{v_y} {\red{\mathbf{i}} \times \green{\mathbf{j}}} + \red{u_x} \blue{v_z} \red{\mathbf{i}} \times \blue{\mathbf{k}} \\
-                       &+ \green{u_y} \red{v_x} \green{\mathbf{j}} \times \red{\mathbf{i}} + \green{u_y v_y \cancel{\mathbf{j} \times \mathbf{j}}} + \green{u_y} \blue{v_z} \boxed{\green{\mathbf{j}} \times \blue{\mathbf{k}}} \\
-                       &+ \blue{u_z} \red{v_x} \blue{\mathbf{k}} \times \red{\mathbf{i}} + \blue{u_z} \green{v_y} \boxed{\blue{\mathbf{k}} \times \green{\mathbf{j}}} + \blue{u_z v_z \cancel{\mathbf{k} \times \mathbf{k}}} \\
+                      &= \red{u_x v_x \cancel{\mathbf{i} \times \mathbf{i}}} + \red{u_x} \green{v_y} {\red{\mathbf{i}} \times \green{\mathbf{j}}} + \red{u_x} \aqua{v_z} \red{\mathbf{i}} \times \aqua{\mathbf{k}} \\
+                       &+ \green{u_y} \red{v_x} \green{\mathbf{j}} \times \red{\mathbf{i}} + \green{u_y v_y \cancel{\mathbf{j} \times \mathbf{j}}} + \green{u_y} \aqua{v_z} \boxed{\green{\mathbf{j}} \times \aqua{\mathbf{k}}} \\
+                       &+ \aqua{u_z} \red{v_x} \aqua{\mathbf{k}} \times \red{\mathbf{i}} + \aqua{u_z} \green{v_y} \boxed{\aqua{\mathbf{k}} \times \green{\mathbf{j}}} + \aqua{u_z v_z \cancel{\mathbf{k} \times \mathbf{k}}} \\
                     \end{split}
                     $
                     </div>
                     <p></p>
                     <div class='fragment'>
                         $
-                        \green{\mathbf{j}} \times \blue{\mathbf{k}} = \red{\mathbf{i}}, \quad \blue{\mathbf{k}} \times \green{\mathbf{j}} = -\red{\mathbf{i}}
+                        \green{\mathbf{j}} \times \aqua{\mathbf{k}} = \red{\mathbf{i}}, \quad \aqua{\mathbf{k}} \times \green{\mathbf{j}} = -\red{\mathbf{i}}
                         $
                     </div>
                     <p></p>
                     <div class='fragment'>
                        $
-                       \rightarrow (\green{u_y} \blue{v_z} - \blue{u_z} \green{v_y}) \, \red{\mathbf{i}}
+                       \rightarrow (\green{u_y} \aqua{v_z} - \aqua{u_z} \green{v_y}) \, \red{\mathbf{i}}
                        $
                     </div>
 
@@ -449,22 +449,22 @@
                     $
                     \require{cancel}
                     \begin{split}
-                      &= \red{u_x v_x \cancel{\mathbf{i} \times \mathbf{i}}} + \red{u_x} \green{v_y} {\red{\mathbf{i}} \times \green{\mathbf{j}}} + \red{u_x} \blue{v_z} \boxed{\red{\mathbf{i}} \times \blue{\mathbf{k}}} \\
-                       &+ \green{u_y} \red{v_x} \green{\mathbf{j}} \times \red{\mathbf{i}} + \green{u_y v_y \cancel{\mathbf{j} \times \mathbf{j}}} + \green{u_y} \blue{v_z} {\green{\mathbf{j}} \times \blue{\mathbf{k}}} \\
-                       &+ \blue{u_z} \red{v_x} \boxed{\blue{\mathbf{k}} \times \red{\mathbf{i}}} + \blue{u_z} \green{v_y} {\blue{\mathbf{k}} \times \green{\mathbf{j}}} + \blue{u_z v_z \cancel{\mathbf{k} \times \mathbf{k}}} \\
+                      &= \red{u_x v_x \cancel{\mathbf{i} \times \mathbf{i}}} + \red{u_x} \green{v_y} {\red{\mathbf{i}} \times \green{\mathbf{j}}} + \red{u_x} \aqua{v_z} \boxed{\red{\mathbf{i}} \times \aqua{\mathbf{k}}} \\
+                       &+ \green{u_y} \red{v_x} \green{\mathbf{j}} \times \red{\mathbf{i}} + \green{u_y v_y \cancel{\mathbf{j} \times \mathbf{j}}} + \green{u_y} \aqua{v_z} {\green{\mathbf{j}} \times \aqua{\mathbf{k}}} \\
+                       &+ \aqua{u_z} \red{v_x} \boxed{\aqua{\mathbf{k}} \times \red{\mathbf{i}}} + \aqua{u_z} \green{v_y} {\aqua{\mathbf{k}} \times \green{\mathbf{j}}} + \aqua{u_z v_z \cancel{\mathbf{k} \times \mathbf{k}}} \\
                     \end{split}
                     $
                     </div>
                     <p></p>
                     <div class='fragment'>
                         $
-                        \red{\mathbf{i}} \times \blue{\mathbf{k}} = \green{\mathbf{j}}, \quad \blue{\mathbf{k}} \times \red{\mathbf{i}} = -\green{\mathbf{j}}
+                        \red{\mathbf{i}} \times \aqua{\mathbf{k}} = \green{\mathbf{j}}, \quad \aqua{\mathbf{k}} \times \red{\mathbf{i}} = -\green{\mathbf{j}}
                         $
                     </div>
                     <p></p>
                     <div class='fragment'>
                        $
-                       \rightarrow (\red{u_x} \blue{v_z} - \blue{u_z} \red{v_x}) \, \green{\mathbf{j}}
+                       \rightarrow (\red{u_x} \aqua{v_z} - \aqua{u_z} \red{v_x}) \, \green{\mathbf{j}}
                        $
                     </div>
 
@@ -474,9 +474,9 @@
                     <div>
                     $
                     \begin{split}
-                    \vec{u} \times \vec{v}  &= (\green{u_y} \blue{v_z} - \blue{u_z} \green{v_y})\, \red{\mathbf{i}} \\
-                                            &+ (\blue{u_z} \red{v_x} - \red{u_x}\blue{v_z} )\, \green{\mathbf{j}} \\
-                                            &+ (\red{u_x}\green{v_y} - \green{u_y \red{v_x}}) \, \blue{\mathbf{k}}
+                    \vec{u} \times \vec{v}  &= (\green{u_y} \aqua{v_z} - \aqua{u_z} \green{v_y})\, \red{\mathbf{i}} \\
+                                            &+ (\aqua{u_z} \red{v_x} - \red{u_x}\aqua{v_z} )\, \green{\mathbf{j}} \\
+                                            &+ (\red{u_x}\green{v_y} - \green{u_y \red{v_x}}) \, \aqua{\mathbf{k}}
                     \end{split}
                     $
                     </div>
@@ -488,12 +488,12 @@
                     <h4>Ta determinanten av følgende matrise</h4>
                     $
                     \begin{align*}
-                        \vec{u} \times \vec{v} &= \begin{vmatrix} \red{\mathbf{i}} & \green{\mathbf{j}} & \blue{\mathbf{k}} \\
-                                                                 \red{u_x} & \green{u_y} & \blue{u_z} \\
-                                                                 \red{v_x} & \green{v_y} & \blue{v_z} \end{vmatrix} \\
-                                               &= (\green{u_y} \blue{v_z} - \blue{u_z} \green{v_y})\, \red{\mathbf{i}} \\
-                                               &+ (\blue{u_z} \red{v_x} - \red{u_x} \blue{v_z} )\, \green{\mathbf{j}} \\
-                                               &+ (\red{u_x} \green{v_y} - \green{u_y} \red{v_x})\, \blue{\mathbf{k}}
+                        \vec{u} \times \vec{v} &= \begin{vmatrix} \red{\mathbf{i}} & \green{\mathbf{j}} & \aqua{\mathbf{k}} \\
+                                                                 \red{u_x} & \green{u_y} & \aqua{u_z} \\
+                                                                 \red{v_x} & \green{v_y} & \aqua{v_z} \end{vmatrix} \\
+                                               &= (\green{u_y} \aqua{v_z} - \aqua{u_z} \green{v_y})\, \red{\mathbf{i}} \\
+                                               &+ (\aqua{u_z} \red{v_x} - \red{u_x} \aqua{v_z} )\, \green{\mathbf{j}} \\
+                                               &+ (\red{u_x} \green{v_y} - \green{u_y} \red{v_x})\, \aqua{\mathbf{k}}
                     \end{align*}
                     $
                 </section>
@@ -526,8 +526,8 @@
             <p>Også komponentvis</p>
             $
             \begin{split}
-            \frac{d \vec{u}}{dt} &= \frac{d}{dt}\left(\red{u_x \mathbf{i}} + \green{u_y \mathbf{j}} +\blue{u_z \mathbf{k}} \right) \\
-                                 &= \frac{d \red{u_x}}{dt} \red{\mathbf{i}} + \frac{d \green{u_y}}{dt} \green{\mathbf{j}} + \frac{d \blue{u_z}}{dt} \blue{\mathbf{k}}
+            \frac{d \vec{u}}{dt} &= \frac{d}{dt}\left(\red{u_x \mathbf{i}} + \green{u_y \mathbf{j}} +\aqua{u_z \mathbf{k}} \right) \\
+                                 &= \frac{d \red{u_x}}{dt} \red{\mathbf{i}} + \frac{d \green{u_y}}{dt} \green{\mathbf{j}} + \frac{d \aqua{u_z}}{dt} \aqua{\mathbf{k}}
             \end{split}
             $
             <p>Siden enhetsvektorene er <u>uavhengige av tid</u>!</p>
@@ -587,7 +587,7 @@
                   TeX: { Macros: {
                         red: ['\\color{red}{#1}', 1],
                         green: ['\\color{green}{#1}', 1],
-                        blue: ['\\color{blue}{#1}', 1],
+                        aqua: ['\\color{aqua}{#1}', 1],
                         RR: "{\\bf R}"
                         }
                       }
@@ -627,7 +627,7 @@
 						Macros: {
                             red: ['\\color{red}{#1}', 1],
                             green: ['\\color{green}{#1}', 1],
-                            blue: ['\\color{blue}{#1}', 1],
+                            aqua: ['\\color{aqua}{#1}', 1],
 							R: '\\mathbb{R}',
 							set: [ '\\left\\{#1 \\; ; \\; #2\\right\\}', 2 ]
 						}
